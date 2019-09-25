@@ -65,5 +65,3 @@ if not(path.exists("id.txt")):
 
 if __name__ == "__main__":
     main()
-
-
