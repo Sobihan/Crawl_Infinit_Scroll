@@ -4,10 +4,10 @@ import requests, sys, time
 from bs4 import BeautifulSoup
 from os import path
 
-PATH = "https://www.auchandrive.fr/update-catalog/?categories="
+PATH = "" ##A remplir
 headers = {"User-Agent":
-                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36'}
-cookies = {'auchanCook': '874|'}
+                ''} ## A remplir
+cookies = ## A remplir
 
 def download_page(URL):
     retry_count = 5
@@ -44,7 +44,7 @@ def get_product(category, file):
             if not 'catalog' in href:
                 print("Not a product: ", href)
             else:
-                file.write("https://www.auchandrive.fr" + href)
+                file.write("" + href) ### A remplir
                 file.write('\n')
         index = index + 20
     return 0
